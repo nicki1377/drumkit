@@ -1,13 +1,26 @@
+document.getElementById("wkey").addEventListener("click", function() {
+    playAudio("sounds/tom-1.mp3");
+});
+document.getElementById("akey").addEventListener("click", function() {
+    playAudio("sounds/tom-2.mp3");
+});
+document.getElementById("skey").addEventListener("click", function() {
+    playAudio("sounds/tom-3.mp3");
+});
+document.getElementById("dkey").addEventListener("click", function() {
+    playAudio("sounds/tom-4.mp3");
+});
+document.getElementById("jkey").addEventListener("click", function() {
+    playAudio("sounds/snare.mp3");
+});
+document.getElementById("kkey").addEventListener("click", function() {
+    playAudio("sounds/crash.mp3");
+});
+document.getElementById("lkey").addEventListener("click", function() {
+    playAudio("sounds/kick-bass.mp3");
+});
 
 function playAudio(sound){
     var audio = new Audio(sound);
     audio.play()
 }
-
-document.getElementByClass("w drum").addEventListener("click", playAudio("tom-1.mp3"));
-document.getElementByClass("a drum").addEventListener("click", playAudio("tom-2.mp3"));
-document.getElementByClass("s drum").addEventListener("click", playAudio("tom-3.mp3"));
-document.getElementByClass("d drum").addEventListener("click", playAudio("tom-4.mp3"));
-document.getElementByClass("j drum").addEventListener("click", playAudio("snare.mp3"));
-document.getElementByClass("k drum").addEventListener("click", playAudio("crash.mp3"));
-document.getElementByClass("l drum").addEventListener("click", playAudio("kick-bass.mp3"));

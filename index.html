@@ -11,14 +11,15 @@
 <body>
 
   <h1 id="title">Drum 🥁 Kit</h1>
+  <p id="demo"></p>
   <div class="set">
-    <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button>
+    <button class="w drum", id="wkey">w</button>
+    <button class="a drum", id="akey">a</button>
+    <button class="s drum", id="skey">s</button>
+    <button class="d drum", id="dkey">d</button>
+    <button class="j drum", id="jkey">j</button>
+    <button class="k drum", id="kkey">k</button>
+    <button class="l drum", id="lkey">l</button>
   </div>
   <script src="index.js", charset="UTF-8">
   </script>
@@ -27,12 +28,5 @@
   </footer>
 </body>
 
-<p id="demo"></p>
-
-<script>
-  document.getElementByClass("w drum").addEventListener("click", function() {
-    document.getElementById("demo").innerHTML = "Hello World";
-  });
-</script>
-
 </html>
+
